@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- Estilos -->
+    <!--===== Font Awesome =====-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Orbitron:wght@500&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Componentes -->
+    <link rel="stylesheet" href="./componentes/header.css" />
+    <script defer src="./componentes/header.js"></script>
+
+    <link rel="stylesheet" href="./componentes/carrusel.css" />
+    <script defer src="./componentes/carrusel.js"></script>
+
+    <link rel="stylesheet" href="./componentes/footer.css" />
+    <script defer src="./componentes/footer.js"></script>
+
+    <link rel="stylesheet" href="./componentes/buttonUp.css" />
+    <script defer src="./componentes/buttonUp.js"></script>
+
+    <!-- Pagina -->
+    <link rel="stylesheet" href="./pages/portfolio.css" />
+    <script defer src="./pages/portfolio.js"></script>
+  </head>
+  <body>
+    <div class="contenedor-principal" id="home_wave">
+      <div class="contenedor__header-titulo">
+        <div class="bgAnimation" id="bgAnimation">
+          <div class="backgroundAmim"></div>
+        </div>
+        <div class="header-portfolio"></div>
+        <!-- <h1 class="titulo-principal">Facundo Piqueras</h1> -->
+        <div class="container">
+          <section>
+            <div class="container-titulo-image">
+              <div class="titulo-image">
+                <img class="imagen-titulo" src=./imgs/selfie-backgroundless.png
+                alt="" />
+              </div>
+            </div>
+            <div class="textBox">
+              <h1>Soy Facundo Piqueras</h1>
+              <h1>Desarrollador <span></span></h1>
+              <a href="https://github.com/Bandiicoot" target="_blank">
+                <button class="homeBtn" style="--i: #fff">Github</button>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/facundo-piqueras-707a18219/"
+                target="_blank"
+              >
+                <button class="homeBtn" style="--i: #00bfff">Linkedin</button>
+              </a>
+              <!-- <input
+                class="homeBtn"
+                style="--i: #00bfff"
+                type="text"
+                placeholder="fa-ndo@hotmail.com"
+                inputmode="email"
+                text="fa-ndo@hotmail.com"
+              />
+              <button class="homeBtn" style="--i: #fff" onclick="copyText()">
+                copy
+              </button> -->
+              <!-- id="myInput" -->
+              <script>
+                function copyText() {
+                  let inputText = document.getElementById("myInput");
+
+                  inputText.select();
+                  inputText.setSelectionRange(0, 99999);
+                  navigator.clipboard.writeText(inputText.value);
+
+                  alert("Texto copidado: " + inputText.value);
+                }
+              </script>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="contenedor-portfolio">
+        <div class="contenedor-carrusell"></div>
+        <div id="card-area">
+          <div class="wrapper">
+            <div class="box-area">
+              <div class="box">
+                <img alt="" src="./imgs/buscador.png" />
+                <div class="overlay">
+                  <h3 style="color: azure">Buscador Mercado Libre</h3>
+                  <p style="color: #1d1d1d">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Neque modi explicabo libero ea nam. Quod.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:7123801141653516288/"
+                    >Ver mas</a
+                  >
+                </div>
+              </div>
+              <div class="box">
+                <img alt="" src="./imgs/pet-finder.png" />
+                <div class="overlay">
+                  <h3 style="color: azure">Pet Finder</h3>
+                  <p style="color: #1d1d1d">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Neque modi explicabo libero ea nam. Quod.
+                  </p>
+                  <a href="#">Ver mas</a>
+                </div>
+              </div>
+              <div class="box">
+                <img alt="" src="./imgs/ppt-singleplayer.png" />
+                <div class="overlay">
+                  <h3 style="color: azure">Piedra Papel o Tijeras</h3>
+                  <p style="color: #1d1d1d">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Neque modi explicabo libero ea nam. Quod.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:7123752581679489024/"
+                    >Ver mas</a
+                  >
+                </div>
+              </div>
+              <div class="box">
+                <img alt="" src="./imgs/ppt-online.png" />
+                <div class="overlay">
+                  <h3 style="color: azure">
+                    Piedra Papel o Tijeras Multiplayer
+                  </h3>
+                  <p style="color: #1d1d1d">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Neque modi explicabo libero ea nam. Quod.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:7125563752590028800/"
+                    >Ver mas</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- skills -->
+        <div class="skills-title">
+          <div class="class-subt">Tecnologias</div>
+        </div>
+        <div id="card-area">
+          <div class="wrapper">
+            <div class="skills-box-area">
+              <div class="skills-box">
+                <img alt="" src="./imgs/JavaScript-logo.png" />
+                <div class="skills-overlay">
+                  <h3 style="color: azure">JavaScript</h3>
+                  <p>
+                    <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Neque modi explicabo libero ea nam. Quod. -->
+                  </p>
+                </div>
+              </div>
+              <div class="skills-box">
+                <img alt="" src="./imgs/Other-html-5-icon.png" />
+                <div class="skills-overlay">
+                  <h3 style="color: azure">HTML</h3>
+                  <!-- <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Neque modi explicabo libero ea nam. Quod.
+                  </p> -->
+                </div>
+              </div>
+              <div class="skills-box">
+                <img alt="" src="./imgs/css-logo.png" />
+                <div class="skills-overlay">
+                  <h3 style="color: azure">CSS</h3>
+                  <!-- <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Neque modi explicabo libero ea nam. Quod.
+                  </p> -->
+                </div>
+              </div>
+              <div class="skills-box">
+                <img alt="" src="./imgs/react-logo-2.png" />
+                <div class="skills-overlay">
+                  <h3 style="color: azure">React</h3>
+                  <!-- <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Neque modi explicabo libero ea nam. Quod.
+                  </p> -->
+                </div>
+              </div>
+              <div class="skills-box">
+                <img alt="" src="./imgs/github-logo-2.png" />
+                <div class="skills-overlay">
+                  <h3 style="color: azure">GitHub</h3>
+                  <!-- <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Neque modi explicabo libero ea nam. Quod.
+                  </p> -->
+                </div>
+              </div>
+              <div class="skills-box">
+                <img alt="" src="./imgs/nodejs-icon.png" />
+                <div class="skills-overlay">
+                  <h3 style="color: azure">NodeJs</h3>
+                  <!-- <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Neque modi explicabo libero ea nam. Quod.
+                  </p> -->
+                </div>
+              </div>
+              <div class="skills-box">
+                <img alt="" src="./imgs/firebase-logo.png" />
+                <div class="skills-overlay">
+                  <h3 style="color: azure">FireBase</h3>
+                  <!-- <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Neque modi explicabo libero ea nam. Quod.
+                  </p> -->
+                </div>
+              </div>
+              <div class="skills-box">
+                <img alt="" src="./imgs/vercel-logo.png" />
+                <div class="skills-overlay">
+                  <h3 style="color: azure">Vercel</h3>
+                  <!-- <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Neque modi explicabo libero ea nam. Quod.
+                  </p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-portfolio"></div>
+      </div>
+
+      <!-- <div class="bienvenida-servicios">
+        <div class="contenedor-de-cards"></div>
+        <template id="servicios1-template">
+          <div class="card">
+            <a class="card-link" href="http://" target="_blank">
+              <div class="uno">
+                <img src="" alt="" class="card__img" />
+              </div>
+              <div class="dos">
+                <div class="card__content"></div>
+                <h3 class="card-subtitle">Hago cosas</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Sint, est quia, reiciendis optio quas reprehenderit, commodi
+                  suscipit accusamus tenetur dicta quae ad vitae esse nulla?
+                  Adipisci doloribus facilis explicabo dolore.
+                </p> -->
+      <!-- </div>
+                </a>
+          </div> -->
+      <!-- </template>
+      </div>  -->
+    </div>
+    <div class="container-buttonUp"></div>
+  </body>
+</html>
